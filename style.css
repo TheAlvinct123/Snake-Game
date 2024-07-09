@@ -1,0 +1,153 @@
+/* Hide all screens initially */
+#initialScreen, #gameScreen, #gameOverScreen {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Reset default styles for body and html */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Styling for the initial screen */
+#initialScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: black;
+}
+
+/* Header styling for initial screen */
+#initialScreen h1 {
+    color: white;
+    font-size: 4em;
+    margin: 20px;
+}
+
+/* Paragraph styling for initial screen */
+#initialScreen p {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 200px; /* Space below paragraph */
+}
+
+/* Button styling for initial screen */
+#initialScreen button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect for initial screen */
+#initialScreen button:hover {
+    opacity: .8;
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Styling for the game screen */
+#gameScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: black; /* Example background color */
+}
+
+/* Button styling for the game screen */
+#gameScreen button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect for the game screen */
+#gameScreen button:hover {
+    opacity: .8;
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Score display styling */
+#score {
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* Canvas styling */
+#gameCanvas {
+    border: 1px solid white;
+    background-color: black; /* Example canvas background color */
+    border-radius: 5px;
+    width: 800px; /* Adjust width */
+    height: 600px; /* Adjust height */
+}
+
+/* Styling for game over screen */
+#gameOverScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: black;
+}
+
+/* Header styling for game over screen */
+#gameOverScreen h1 {
+    color: white;
+    font-size: 4em;
+    margin: 20px;
+}
+
+/* Paragraph styling for game over screen */
+#gameOverScreen p {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 200px; /* Space below paragraph */
+}
+
+/* Button styling for game over screen */
+#gameOverScreen button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-top: 20px; /* Add spacing between buttons */
+    display: block; /* Ensure buttons stack vertically */
+    width: 200px; /* Optional: Set a width to maintain consistency */
+    text-align: center; /* Center button text */
+    margin: 10px auto; /* Center horizontally */
+}
+
+/* Button hover effect for game over screen */
+#gameOverScreen button:hover {
+    opacity: .8;
+    transform: scale(1.05); /* Scale up on hover */
+}

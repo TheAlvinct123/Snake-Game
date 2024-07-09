@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Specify character encoding -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Set compatibility mode for IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport settings -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external CSS stylesheet -->
+    <title>Snake Game</title> <!-- Page title -->
+</head>
+<body>
+    <!-- Initial Screen before playing game -->
+    <div id="initialScreen">
+        <h1>Welcome to Snake Game</h1> <!-- Main heading -->
+        <p>Use the arrow keys to control the snake</p> <!-- Instructional text -->
+        <button id="startButton">Start Game</button> <!-- Start game button -->
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen">
+        <canvas id="gameCanvas" width="800" height="600"></canvas> <!-- Game canvas -->
+        <div id="score">Score: 0</div> <!-- Score display -->
+        <button id="gameQuitButton">Quit</button> <!-- Quit button for game screen -->
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="gameOverScreen">
+        <h1>Game Over</h1> <!-- Game over heading -->
+        <p>Your final score: <span id="finalScore"></span></p> <!-- Display final score -->
+        <button id="tryAgainButton">Try Again</button> <!-- Try again button for game over screen -->
+        <button id="gameOverQuitButton">Quit</button> <!-- Quit button for game over screen -->
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
